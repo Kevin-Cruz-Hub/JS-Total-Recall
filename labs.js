@@ -116,7 +116,7 @@ for(let i = 0; i<=10; i++){
 console.log(`$${bank_account}`)
 // 2.
 for(let i = 1; i<=100; i++){
-    num = i *2
+    let num = i *2
     bank_account+= num;
 }
 console.log(`$${bank_account}`)
@@ -335,7 +335,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 // Objects
 
-// A. Make a user object
+// // A. Make a user object
 const user = {
     name: "John Doe",
     email: 'JohnDoe@gmail.com',
@@ -395,8 +395,10 @@ for(let friend of friendList){
 
 const updateUser = function(){
     user.age+=1;
-    user['name'].toUpperCase()
+    // user.friend.age+=1
+    user.name = user.name.toUpperCase()
 
 }
+updateUser();
 updateUser();
 console.table(user)
